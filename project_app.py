@@ -12,9 +12,12 @@ model = pickle.load(open("model.pkl", "rb"))
 # =========================
 # تحميل البيانات
 # =========================
-path_real = r"C:\Users\lenovo\OneDrive\Desktop\project\real_users.csv"
-path_fake = r"C:\Users\lenovo\OneDrive\Desktop\project\fake_users.csv"
+# تحميل البيانات
+path_real = "real_users.csv"
+path_fake = "fake_users.csv"
 
+real_df = pd.read_csv(path_real)
+fake_df = pd.read_csv(path_fake)
 real_df = pd.read_csv(path_real)
 fake_df = pd.read_csv(path_fake)
 
